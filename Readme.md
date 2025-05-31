@@ -76,12 +76,15 @@ Enter document path, JSON string, or email text: `sample_invoice.pdf`
 
 
 #📦 Processing Result:
+
 {
+
   "sender": "document",
   "subject": "Invoice #INV-2023-001",
   "intent": "Invoice",
   "important_dates": ["2023-12-15"],
   "requested_action": "Payment processing"
+  
 }
 
 #📝 Process Single Document in Code
