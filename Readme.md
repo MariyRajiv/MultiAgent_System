@@ -1,10 +1,11 @@
-<h1 align="center">Watch Video</h1>
+<div align="center">
 
-<p align="center">
-  <a href="https://www.loom.com/share/39ad7990030b454d87f128eb5b4e2122?sid=63a90289-5048-420d-af1b-7ee5f5b1d648" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/64/2377/2377793.png" alt="Watch Video" width="64" />
+  <a href="https://www.loom.com/share/39ad7990030b454d87f128eb5b4e2122?sid=63a90289-5048-420d-af1b-7ee5f5b1d648" target="_blank" style="text-decoration:none; display: inline-flex; align-items: center; gap: 8px;">
+    <img src="https://cdn-icons-png.flaticon.com/64/2377/2377793.png" alt="Watch Video" width="40" />
+    <span style="font-size: 1.5em; font-weight: bold; color: #000;">Watch Video</span>
   </a>
-</p>
+
+</div>
 
 
 
