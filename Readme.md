@@ -107,11 +107,21 @@ Examples:
 
 # Email
 -orchestrator("From: sender@example.com\nSubject: Urgent Request\n...")
-#✅ Sample Test Cases
--Input Type	Sample Input	Expected Intent
--JSON	{"invoice_id": "INV-123", "amount": 1500.50}	Invoice
--Email	Subject: Urgent RFQ\nNeed quotes for 100 laptops...	RFQ
--PDF	Sample Invoice PDF	Invoice
+
+## ✅ Sample Test Cases
+
+- **JSON**
+  - Sample Input: `{"invoice_id": "INV-123", "amount": 1500.50}`
+  - Expected Intent: `Invoice`
+
+- **Email**
+  - Sample Input: `Subject: Urgent RFQ\nNeed quotes for 100 laptops...`
+  - Expected Intent: `RFQ`
+
+- **PDF**
+  - Sample Input: `Sample Invoice PDF`
+  - Expected Intent: `Invoice`
+
 
 👉 See TEST_CASES.md for more examples.
 
