@@ -152,12 +152,13 @@ print(result)
 
 # **🧩 System Components**
 
-| **Component**      | **Purpose**                 | **Key Functions**                     |
-|--------------------|--------------------------- -|---------------------------------------|
+| **Component**      | **Purpose**                | **Key Functions**                     |
+|--------------------|----------------------------|----------------------------------------|
 | Classifier Agent   | Document classification     | `classify_format_and_intent()`        |
 | Email Agent        | Email processing            | `email_agent()`                       |
 | JSON Agent         | JSON validation             | `json_agent()`                        |
-| PDF Utilities      | Text extraction             | `extract_text_from_pdf()`             |
+| PDF Utilities      | Text extraction             | `extract_text_from_pdf()`            |
 | Shared Memory      | Context tracking            | `log_entry()`, `get_history()`        |
 | Orchestrator       | Workflow management         | `orchestrator()`                      |
+
 
