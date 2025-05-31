@@ -1,0 +1,30 @@
+# Valid Invoice
+test_json_valid = {
+    "invoice_id": "INV-2023-001",
+    "customer_name": "Acme Corp",
+    "amount": 1250.75,
+    "due_date": "2023-12-15"
+}
+
+# Partial Invoice (missing fields)
+test_json_partial = {
+    "invoice_id": "INV-2023-002",
+    "customer_name": "Beta LLC"
+}
+
+# Invalid JSON Format
+test_json_invalid = """
+{
+    "invoice_id": "INV-2023-003",
+    "amount": "five hundred",  # invalid type
+    "due_date: "2023-12-20"    # missing closing quote
+}
+"""
+
+# RFQ (Request for Quote)
+test_json_rfq = {
+    "rfq_id": "RFQ-2023-101",
+    "items": ["Laptop", "Monitor", "Docking Station"],
+    "quantity": [5, 5, 5],
+    "deadline": "2023-11-30"
+}

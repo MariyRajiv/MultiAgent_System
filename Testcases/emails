@@ -1,0 +1,46 @@
+# Standard Business Email
+test_email_standard: |
+  From: jane.doe@supplier.com
+  To: procurement@company.com
+  Subject: Invoice #INV-2023-045
+  Date: November 10, 2023
+
+  Dear Accounts Payable,
+
+  Please find attached invoice INV-2023-045 for services rendered. 
+  Amount: $2,450.00
+  Due Date: December 15, 2023
+
+  Best regards,
+  Jane Doe
+  Accounting Department
+
+# Urgent RFQ Email
+test_email_urgent: |
+  From: emergency.procurement@company.com 
+  Subject: URGENT: Server Replacement RFQ
+  Date: 2023-11-15
+
+  We need immediate quotes for:
+  - 3x Dell PowerEdge R750 Servers
+  - 10x 32GB DDR4 RAM modules
+  - 5x 1TB NVMe SSDs
+
+  Required delivery: By Nov 30, 2023
+  Budget: $25,000
+
+  Please respond ASAP!
+# Complaint Email
+test_email_complaint: |
+  From: angry.customer@domain.com
+  Subject: COMPLAINT - Order #ORD-77841
+
+  Your service is terrible! My order #ORD-77841 arrived 2 weeks late 
+  and half the items were damaged. I demand:
+  1. Full refund of $350.99
+  2. Return shipping label
+  3. Compensation for inconvenience
+
+  Expected resolution by: 2023-11-20
+
+test_email_minimal: "Need quote for office chairs. Contact bob@furniture.com"

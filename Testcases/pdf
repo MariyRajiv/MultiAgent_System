@@ -1,0 +1,8 @@
+# Local PDF file
+test_pdf_local = "/path/to/Vasanti_resume_Androidintern.pdf"
+
+# PDF URL (requires internet)
+test_pdf_url = "https://example.com/sample-invoice.pdf"
+
+# Corrupted PDF
+test_pdf_corrupted = "/path/to/corrupted_file.pdf"

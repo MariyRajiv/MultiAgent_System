@@ -1,0 +1,27 @@
+# Empty Input
+test_empty = ""
+
+# Large PDF (>100 pages)
+test_large_pdf = "/path/to/large_document.pdf"
+
+# Mixed Content
+test_mixed_content = """
+From: hybrid@example.com
+Subject: JSON embedded in email
+
+Here's some data:
+{
+  "order_id": "ORD-99112",
+  "items": ["ItemA", "ItemB"],
+  "priority": "high"
+}
+"""
+
+# Unusual Format
+test_unusual_format = """
+START DOCUMENT
+FORMAT: CUSTOM
+INVOICE_ID: INV-789XYZ
+TOTAL: $1,200.00
+END DOCUMENT
+"""
