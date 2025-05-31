@@ -60,18 +60,22 @@ A lightweight multi-agent AI system that classifies and processes PDF, JSON, and
 
 🤖 Multi-Agent Document Processing System
 ----------------------------------------
-Supported input types: PDF, JSON, Email
-Type 'exit' to quit
+Supported input types: PDF, JSON, Email  
+Type 'exit' to quit  
 
-Enter document path, JSON string, or email text: sample_invoice.pdf
-⏳ Extracting text from PDF...
-✅ PDF text extracted (2845 characters)
-🔍 Classifying document...
-📋 Classification: pdf | Invoice
-📧 Processing email content...
-⏱️ Processing completed in 8.32 seconds
+Enter document path, JSON string, or email text: `sample_invoice.pdf`  
 
-📦 Processing Result:
+⏳ Extracting text from PDF...  
+✅ PDF text extracted (2845 characters)  
+
+🔍 Classifying document...  
+📋 Classification: `pdf | Invoice`  
+
+📧 Processing email content...  
+⏱️ Processing completed in 8.32 seconds  
+
+
+#📦 Processing Result:
 {
   "sender": "document",
   "subject": "Invoice #INV-2023-001",
@@ -79,13 +83,18 @@ Enter document path, JSON string, or email text: sample_invoice.pdf
   "important_dates": ["2023-12-15"],
   "requested_action": "Payment processing"
 }
-📝 Process Single Document in Code
+
+#📝 Process Single Document in Code
 
 from orchestrator import orchestrator
+
 result = orchestrator(
+
     input_data="path/to/document.pdf",
     input_type="pdf"
+    
 )
+
 print(result)
 
 ## 📂 Supported Input Types
@@ -97,7 +106,7 @@ print(result)
 | Email    | Raw email text                     |
 
 
-Examples:
+#**Examples:**
 
 # PDF
 -orchestrator("/path/to/file.pdf")
@@ -123,7 +132,7 @@ Examples:
   - Expected Intent: `Invoice`
 
 
-👉 See TEST_CASES.md for more examples.
+#👉 See TEST_CASES.md for more examples.
 
 #**⚙️ Performance Optimization**
 -PDF processing limited to first 2 pages
