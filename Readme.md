@@ -80,9 +80,13 @@ Enter document path, JSON string, or email text: `sample_invoice.pdf`
 {
 
   "sender": "document",
+  
   "subject": "Invoice #INV-2023-001",
+  
   "intent": "Invoice",
+  
   "important_dates": ["2023-12-15"],
+  
   "requested_action": "Payment processing"
   
 }
@@ -120,7 +124,7 @@ print(result)
 # Email
 -orchestrator("From: sender@example.com\nSubject: Urgent Request\n...")
 
-## ✅ Sample Test Cases
+# ✅ Sample Test Cases
 
 - **JSON**
   - Sample Input: `{"invoice_id": "INV-123", "amount": 1500.50}`
@@ -148,12 +152,12 @@ print(result)
 
 # **🧩 System Components**
 
-| **Component**      | **Purpose**                | **Key Functions**                     |
-|--------------------|----------------------------|----------------------------------------|
+| **Component**      | **Purpose**                 | **Key Functions**                     |
+|--------------------|--------------------------- -|---------------------------------------|
 | Classifier Agent   | Document classification     | `classify_format_and_intent()`        |
 | Email Agent        | Email processing            | `email_agent()`                       |
 | JSON Agent         | JSON validation             | `json_agent()`                        |
-| PDF Utilities      | Text extraction             | `extract_text_from_pdf()`            |
+| PDF Utilities      | Text extraction             | `extract_text_from_pdf()`             |
 | Shared Memory      | Context tracking            | `log_entry()`, `get_history()`        |
 | Orchestrator       | Workflow management         | `orchestrator()`                      |
 
