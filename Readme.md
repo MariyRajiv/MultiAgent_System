@@ -1,68 +1,62 @@
-🧠 Multi-Agent Document Processing System
+# **🧠 Multi-Agent Document Processing System**
+
 A lightweight multi-agent AI system that classifies and processes PDF, JSON, and email documents while maintaining shared context for traceability.
 
-🚀 Key Features
-Format Classification
-Automatically detects PDF, JSON, and email formats.
+## 🚀 Key Features
 
-Intent Recognition
-Identifies document purpose (e.g., Invoice, RFQ, Complaint).
+- **Format Classification**  
+  Automatically detects PDF, JSON, and email formats.
 
-Agent-Based Processing
+- **Intent Recognition**  
+  Identifies document purpose (e.g., *Invoice*, *RFQ*, *Complaint*).
 
-JSON Agent: Validates and reformats structured data.
+- **Agent-Based Processing**
+  - **JSON Agent**: Validates and reformats structured data.
+  - **Email Agent**: Extracts key information from emails.
+  - **PDF Agent**: Processes text content from PDFs.
 
-Email Agent: Extracts key information from emails.
+- **Context Tracking**  
+  Maintains conversation history and processing traceability.
 
-PDF Agent: Processes text content from PDFs.
+- **Lightweight Architecture**  
+  SQLite-based memory module for easy deployment.
 
-Context Tracking
-Maintains conversation history and processing traceability.
 
-Lightweight Architecture
-SQLite-based memory module for easy deployment.
-
-🧱 System Architecture
+# **🧱 System Architecture**
 ![alt text](image.png)
 
-🛠 Tech Stack
-Language: Python 3.9+
+# **🛠 Tech Stack**
+-Language: Python 3.9+
 
-LLM Integration: Ollama (local LLMs)
+-LLM Integration: Ollama (local LLMs)
 
-Memory Storage: SQLite
+-Memory Storage: SQLite
 
-PDF Processing: PyPDF2
+-PDF Processing: PyPDF2
 
-Supported Models: Mistral, LLaMA 3, Phi-3 (via Ollama)
+-Supported Models: Mistral, LLaMA 3, Phi-3 (via Ollama)
 
-📦 Installation
-Clone the repository:
+# **📦 Installation**
+#Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/document-processing-system.git
-cd document-processing-system
-Install dependencies:
+-git clone https://github.com/yourusername/document-processing-system.git
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Set up Ollama:
+#Install dependencies:
 
-Download and install Ollama.
+-pip install -r requirements.txt
+#Set up Ollama:
 
-Pull the required model:
-ollama pull mistral
+-Download and install Ollama.
 
-💡 Usage
-▶️ Run Interactive Mode
+#Pull the required model:
+-ollama pull mistral
 
-python test_run.py
+#**💡 Usage**
+-▶️ Run Interactive Mode
 
-Example session:
+-python test_run.py
+
+#Example session:
 
 🤖 Multi-Agent Document Processing System
 ----------------------------------------
@@ -88,50 +82,56 @@ Enter document path, JSON string, or email text: sample_invoice.pdf
 📝 Process Single Document in Code
 
 from orchestrator import orchestrator
-
 result = orchestrator(
     input_data="path/to/document.pdf",
     input_type="pdf"
 )
 print(result)
-📂 Supported Input Types
-Type	Input Format
-PDF	File path or URL
-JSON	Dictionary or JSON string
-Email	Raw email text
+
+## 📂 Supported Input Types
+
+| **Type** | **Input Format**                   |
+|----------|------------------------------------|
+| PDF      | File path or URL                   |
+| JSON     | Dictionary or JSON string          |
+| Email    | Raw email text                     |
+
 
 Examples:
 
 # PDF
-orchestrator("/path/to/file.pdf")
+-orchestrator("/path/to/file.pdf")
 
 # JSON
-orchestrator({"invoice_id": "INV-123", "amount": 1500.50})
+-orchestrator({"invoice_id": "INV-123", "amount": 1500.50})
 
 # Email
-orchestrator("From: sender@example.com\nSubject: Urgent Request\n...")
-✅ Sample Test Cases
-Input Type	Sample Input	Expected Intent
-JSON	{"invoice_id": "INV-123", "amount": 1500.50}	Invoice
-Email	Subject: Urgent RFQ\nNeed quotes for 100 laptops...	RFQ
-PDF	Sample Invoice PDF	Invoice
+-orchestrator("From: sender@example.com\nSubject: Urgent Request\n...")
+#✅ Sample Test Cases
+-Input Type	Sample Input	Expected Intent
+-JSON	{"invoice_id": "INV-123", "amount": 1500.50}	Invoice
+-Email	Subject: Urgent RFQ\nNeed quotes for 100 laptops...	RFQ
+-PDF	Sample Invoice PDF	Invoice
 
 👉 See TEST_CASES.md for more examples.
 
-⚙️ Performance Optimization
-PDF processing limited to first 5 pages
+#**⚙️ Performance Optimization**
+-PDF processing limited to first 2 pages
 
-LLM inputs truncated to 2000 characters
+-LLM inputs truncated to 2000 characters
 
-Caching mechanism for frequent document types
+-Caching mechanism for frequent document types
 
-Async processing for batch operations (experimental)
+-Async processing for batch operations (experimental)
 
-🧩 System Components
-Component	Purpose	Key Functions
-Classifier Agent	Document classification	classify_format_and_intent()
-Email Agent	Email processing	email_agent()
-JSON Agent	JSON validation	json_agent()
-PDF Utilities	Text extraction	extract_text_from_pdf()
-Shared Memory	Context tracking	log_entry(), get_history()
-Orchestrator	Workflow management	orchestrator()
+# **🧩 System Components**
+
+| **Component**      | **Purpose**                | **Key Functions**                     |
+|--------------------|----------------------------|----------------------------------------|
+| Classifier Agent   | Document classification     | `classify_format_and_intent()`        |
+| Email Agent        | Email processing            | `email_agent()`                       |
+| JSON Agent         | JSON validation             | `json_agent()`                        |
+| PDF Utilities      | Text extraction             | `extract_text_from_pdf()`            |
+| Shared Memory      | Context tracking            | `log_entry()`, `get_history()`        |
+| Orchestrator       | Workflow management         | `orchestrator()`                      |
+
