@@ -1,4 +1,11 @@
-# **Watch Video**[![Watch Video](https://cdn-icons-png.flaticon.com/128/2377/2377793.png)](https://www.loom.com/share/39ad7990030b454d87f128eb5b4e2122?sid=63a90289-5048-420d-af1b-7ee5f5b1d648)  
+<h1 align="center">Watch Video</h1>
+
+<p align="center">
+  <a href="https://www.loom.com/share/39ad7990030b454d87f128eb5b4e2122?sid=63a90289-5048-420d-af1b-7ee5f5b1d648" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/64/2377/2377793.png" alt="Watch Video" width="64" />
+  </a>
+</p>
+
 
 
 # **🧠 Multi-Agent Document Processing System**
@@ -142,7 +149,7 @@ print(result)
   - Expected Intent: `Invoice`
 
 
-#👉 See TEST_CASES.md for more examples.
+#👉 See TestCases for more examples.
 
 # **⚙️ Performance Optimization**
 
